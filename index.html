@@ -242,9 +242,10 @@
 
     <script>
         const alunos = [
-            { id: 'lucasF', nome: 'Lucas Ferreira', categoria: '9 serviços essenciais AWS' },
-            { id: 'lucasR', nome: 'Lucas Retanero', categoria: 'Segurança, Identidade e Conformidade' },
-            { id: 'dalva', nome: 'Lindalva Silva' }
+            { id: 'lucasF', nome: 'Lucas Ferreira' },
+            { id: 'lucasR', nome: 'Lucas Retanero'},
+            { id: 'dalva', nome: 'Lindalva Silva' },
+            { id: 'rafaelBorges', nome: 'Rafael Mascarenhas Borges'}
         ];
 
         const cores = ['from-sky-400 to-blue-500', 'from-indigo-400 to-purple-500', 'from-teal-400 to-cyan-500', 'from-violet-400 to-purple-500', 'from-blue-400 to-indigo-500', 'from-cyan-400 to-sky-500'];
@@ -266,7 +267,6 @@
                 <div onclick="openTrabalho('${aluno.id}')" class="group cursor-pointer bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-4 md:p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 border border-sky-100 dark:border-indigo-800/50 flex flex-col items-center gap-3">
                     <div class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-br ${cor} flex items-center justify-center text-white text-2xl md:text-3xl font-bold shadow-lg transform transition-transform duration-300 group-hover:scale-110">${iniciais}</div>
                     <h3 class="text-sm md:text-base font-semibold text-slate-700 dark:text-slate-200 text-center">${aluno.nome}</h3>
-                    <p class="text-xs text-slate-500 dark:text-slate-400 text-center leading-tight">${aluno.categoria}</p>
                     <span class="text-xs text-sky-600 dark:text-indigo-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Clique para ver</span>
                 </div>
             `;
