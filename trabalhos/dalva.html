@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços AWS</title>
+    <link rel="stylesheet" href="dalva.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Serviços da AWS</h1>
+        <p>Armazenamento, Segurança e Bancos de Dados em Cloud</p>
+        <p>Lindalva C Silva</p>
+    </header>
+
+    <section class="container">
+
+        <h2 class="titulo">🗄️ Banco de Dados</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Amazon Aurora</h3>
+                <p>Banco relacional compatível com MySQL e PostgreSQL, focado em alta performance.</p>
+
+                <div class="vantagens">
+                    <strong>Vantagens</strong>
+                    <ul>
+                        <li>Alta performance</li>
+                        <li>Escalabilidade automática</li>
+                        <li>Alta disponibilidade</li>
+                    </ul>
+                </div>
+
+                <div class="desvantagens">
+                    <strong>Desvantagens</strong>
+                    <ul>
+                        <li>Custo elevado</li>
+                        <li>Dependência da AWS</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Amazon DocumentDB</h3>
+                <p>Banco NoSQL compatível com MongoDB para armazenamento de documentos JSON.</p>
+
+                <strong>Vantagens</strong>
+                <ul>
+                    <li>Escalável</li>
+                    <li>Totalmente gerenciado</li>
+                    <li>Compatível com MongoDB</li>
+                </ul>
+
+                <strong>Desvantagens</strong>
+                <ul>
+                    <li>Menos recursos que MongoDB nativo</li>
+                    <li>Custo elevado</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Amazon DynamoDB</h3>
+                <p>Banco NoSQL rápido e altamente escalável para aplicações modernas.</p>
+
+                <strong>Vantagens</strong>
+                <ul>
+                    <li>Altíssima velocidade</li>
+                    <li>Escala automática</li>
+                    <li>Alta disponibilidade</li>
+                </ul>
+
+                <strong>Desvantagens</strong>
+                <ul>
+                    <li>Modelagem complexa</li>
+                    <li>Pode gerar custos altos</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <h2 class="titulo">🔐 Segurança</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>AWS Backup</h3>
+                <p>Serviço que automatiza e centraliza backups na nuvem.</p>
+
+                <strong>Vantagens</strong>
+                <ul>
+                    <li>Backups automáticos</li>
+                    <li>Gerenciamento centralizado</li>
+                    <li>Segurança dos dados</li>
+                </ul>
+
+                <strong>Desvantagens</strong>
+                <ul>
+                    <li>Custo adicional</li>
+                    <li>Configuração inicial</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>AWS IAM</h3>
+                <p>Gerenciamento de usuários e permissões de acesso.</p>
+
+                <strong>Vantagens</strong>
+                <ul>
+                    <li>Controle de acesso</li>
+                    <li>Alta segurança</li>
+                    <li>Integração com serviços AWS</li>
+                </ul>
+
+                <strong>Desvantagens</strong>
+                <ul>
+                    <li>Configuração complexa</li>
+                    <li>Curva de aprendizado</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>AWS Shield</h3>
+                <p>Proteção contra ataques DDoS em aplicações na nuvem.</p>
+
+                <strong>Vantagens</strong>
+                <ul>
+                    <li>Proteção automática</li>
+                    <li>Alta disponibilidade</li>
+                    <li>Integração com AWS</li>
+                </ul>
+
+                <strong>Desvantagens</strong>
+                <ul>
+                    <li>Versão avançada é cara</li>
+                    <li>Uso restrito à AWS</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <h2 class="titulo">💾 Armazenamento</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Amazon EBS</h3>
+                <p>Armazenamento em bloco utilizado com instâncias EC2.</p>
+
+                <strong>Vantagens</strong>
+                <ul>
+                    <li>Alta performance</li>
+                    <li>Snapshots de backup</li>
+                    <li>Integração com EC2</li>
+                </ul>
+
+                <strong>Desvantagens</strong>
+                <ul>
+                    <li>Uso limitado ao EC2</li>
+                    <li>Custo dependendo do uso</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Amazon EFS</h3>
+                <p>Sistema de arquivos compartilhado para múltiplas instâncias.</p>
+
+                <strong>Vantagens</strong>
+                <ul>
+                    <li>Escalável</li>
+                    <li>Compartilhado</li>
+                    <li>Fácil de usar</li>
+                </ul>
+
+                <strong>Desvantagens</strong>
+                <ul>
+                    <li>Mais caro que EBS</li>
+                    <li>Latência maior</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Amazon S3</h3>
+                <p>Serviço de armazenamento de objetos altamente durável.</p>
+
+                <strong>Vantagens</strong>
+                <ul>
+                    <li>Alta durabilidade</li>
+                    <li>Escalável</li>
+                    <li>Baixo custo inicial</li>
+                </ul>
+
+                <strong>Desvantagens</strong>
+                <ul>
+                    <li>Latência maior</li>
+                    <li>Custo de transferência</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 | Cloud Computing - FATEC - 5º Semestre</p>
+        
+    </footer>
+
+</body>
+
+</html>

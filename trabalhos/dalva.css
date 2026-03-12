@@ -1,0 +1,173 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family: Arial, Helvetica, sans-serif;
+background: linear-gradient(120deg,#f5f7fa,#e4ecf3);
+color:#333;
+
+}
+
+header{
+
+background:#232f3e;
+color:white;
+text-align:center;
+padding:40px 20px;
+
+}
+
+header h1{
+
+font-size:36px;
+margin-bottom:10px;
+
+}
+
+header p{
+
+color:#ff9900;
+font-size:18px;
+
+}
+
+.container{
+
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:50px 0;
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:25px;
+
+}
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+
+transition:0.3s;
+
+border-top:4px solid #ff9900;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 12px 30px rgba(0,0,0,0.15);
+
+}
+
+.card h2{
+
+color:#232f3e;
+
+margin-bottom:10px;
+
+font-size:20px;
+
+}
+
+.card p{
+
+font-size:15px;
+
+line-height:1.5;
+
+color:#555;
+
+}
+
+footer{
+
+background:#232f3e;
+
+color:white;
+
+text-align:center;
+
+padding:20px;
+
+margin-top:40px;
+
+font-size:14px;
+
+}
+
+/* Responsividade */
+
+@media(max-width:900px){
+
+.grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+.titulo{
+margin:40px 0 20px;
+font-size:26px;
+color:#232f3e;
+border-left:6px solid #ff9900;
+padding-left:10px;
+}
+
+.card ul{
+margin-left:18px;
+margin-bottom:10px;
+}
+
+.card strong{
+display:block;
+margin-top:10px;
+color:#232f3e;
+}
+
+.card h3{
+color:#232f3e;
+margin-bottom:10px;
+font-size:20px;
+}
+
+.card li{
+font-size:14px;
+color:#555;
+margin-bottom:3px;
+}
+
+.autor{
+margin-top:5px;
+font-size:13px;
+color:#ff9900;
+}
