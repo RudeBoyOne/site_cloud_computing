@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9 Servicos AWS - Gabriel Alves Gadelha</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: linear-gradient(to bottom, #f97c16, #a855f7, #f43f5e, #f59e0b); border-radius: 999px; }
+        ::-webkit-scrollbar-thumb:hover { background: linear-gradient(to bottom, #fb923c, #c084fc, #fb7185, #fbbf24); }
+        * { scrollbar-width: thin; scrollbar-color: #0972D3 #0f172a; }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+    
+    <main class="container mx-auto px-4 py-8 max-w-6xl">
+        
+        <header class="text-center mb-12">
+            <div class="inline-block p-4 bg-gradient-to-br bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl shadow-lg mb-6">
+                <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                </svg>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
+                9 Servicos Essenciais da AWS
+            </h1>
+            <p class="text-xl text-slate-300 font-medium">
+                Gabriel Alves Gadelha
+            </p>
+            <p class="text-sm text-slate-400 mt-2">
+                Cloud Computing - FATEC - 5o Semestre
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <article class="bg-white border-2 border-orange-500 rounded-2xl shadow-xl p-6 text-orange-500 hover:scale-105 transition-transform">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
+                    </svg>
+                </div>
+                <h2 class="text-xl font-bold">S3</h2>
+            </div>
+            <p class="text-sm font-medium mb-2">Amazon S3</p>
+            <p class="text-slate-700 text-sm leading-relaxed">
+                Buckets para armazenamento de objetos (arquivos) tipo fotos, logs, vídeos, backups. Super escalável. "Clientes de todos os tamanhos e setores podem usar o Amazon S3 para armazenar e proteger qualquer volume de dados para uma variedade de casos de uso, como data lakes, sites, aplicações móveis, backup e restauração, arquivamento, aplicações corporativas, dispositivos IoT e análises de big data."
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="px-2 py-1 border rounded-lg text-xs border-orange-500 text-orange-500">Armazenamento</span>
+                <span class="px-2 py-1 border rounded-lg text-xs border-orange-500 text-orange-500">Escalável</span>
+            </div>
+        </article>
+
+        <article class="bg-white border-2 border-green-500 rounded-2xl shadow-xl p-6 text-green-500 hover:scale-105 transition-transform">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+                    </svg>
+                </div>
+                <h2 class="text-xl font-bold">Lambda</h2>
+            </div>
+            <p class="text-sm font-medium mb-2">AWS Lambda</p>
+            <p class="text-slate-700 text-sm leading-relaxed">
+                O Lambda é um serviço de computação orientado por eventos, ele usa um paradigma de programação diferente das aplicações Web tradicionais, utilizando Computação serverless(um modelo de execução de aplicações na nuvem onde o provedor gerencia a infraestrutura, permitindo que os desenvolvedores se concentrem no código, sem se preocupar com a gestão de servidores) — você escreve uma função, define um gatilho, e a AWS executa sem precisar de servidor fixo.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="px-2 py-1 border rounded-lg text-xs border-green-500 text-green-500">Event-Driven</span>
+                <span class="px-2 py-1 border rounded-lg text-xs border-green-500 text-green-500">Serverless</span>
+            </div>
+        </article>
+
+        <article class="bg-white border-2 border-purple-500 rounded-2xl shadow-xl p-6 text-purple-500 hover:scale-105 transition-transform">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                </div>
+                <h2 class="text-xl font-bold">CloudFront</h2>
+            </div>
+            <p class="text-sm font-medium mb-2">Amazon CloudFront</p>
+            <p class="text-slate-700 text-sm leading-relaxed">
+                O CloudFront é um serviço de entrega de conteúdo (CDN) da AWS que distribui conteúdo para os usuários com baixa latência e alta velocidade. Ele armazena cópias do conteúdo em servidores distribuídos globalmente, permitindo que os usuários acessem o conteúdo de forma rápida e eficiente, independentemente da localização geográfica.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="px-2 py-1 border rounded-lg text-xs border-purple-500 text-purple-500">CDN</span>
+                <span class="px-2 py-1 border rounded-lg text-xs border-purple-500 text-purple-500">Entrega de Conteúdo</span>
+            </div>
+        </article>
+
+        <article class="bg-white border-2 border-blue-500 rounded-2xl shadow-xl p-6 text-blue-500 hover:scale-105 transition-transform">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+                    </svg>
+                </div>
+                <h2 class="text-xl font-bold">EC2</h2>
+            </div>
+            <p class="text-sm font-medium mb-2">Amazon Elastic Compute Cloud</p>
+            <p class="text-slate-700 text-sm leading-relaxed">
+                O EC2 é um serviço de computação em nuvem que oferece capacidade de computação redimensionável na nuvem. Ele permite que os usuários criem e gerenciem máquinas virtuais, conhecidas como instâncias, para executar aplicativos e serviços. O EC2 é altamente flexível, permitindo que os usuários escolham entre uma variedade de tipos de instâncias, sistemas operacionais e configurações de rede para atender às suas necessidades específicas.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="px-2 py-1 border rounded-lg text-xs border-blue-500 text-blue-500">Máquinas Virtuais</span>
+                <span class="px-2 py-1 border rounded-lg text-xs border-blue-500 text-blue-500">Redimensionável</span>
+            </div>
+        </article>
+
+        <article class="bg-white border-2 border-sky-500 rounded-2xl shadow-xl p-6 text-sky-500 hover:scale-105 transition-transform">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2M19 11V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                    </svg>
+                </div>
+                <h2 class="text-xl font-bold">VPC</h2>
+            </div>
+            <p class="text-sm font-medium mb-2">Amazon Virtual Private Cloud</p>
+            <p class="text-slate-700 text-sm leading-relaxed">
+                O VPC é um serviço da AWS que permite criar uma rede virtual isolada na nuvem. Ele oferece controle sobre o espaço de endereçamento IP, subnets, gateways e segurança, permitindo que os usuários criem ambientes de rede personalizados para seus aplicativos e serviços.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="px-2 py-1 border rounded-lg text-xs border-sky-500 text-sky-500">Segurança</span>
+                <span class="px-2 py-1 border rounded-lg text-xs border-sky-500 text-sky-500">Isolamento</span>
+            </div>
+        </article>
+
+        <article class="bg-white border-2 border-rose-500 rounded-2xl shadow-xl p-6 text-rose-500 hover:scale-105 transition-transform">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h2 class="text-xl font-bold">RDS</h2>
+            </div>
+            <p class="text-sm font-medium mb-2">Amazon Relational Database Service</p>
+            <p class="text-slate-700 text-sm leading-relaxed">
+                O Amazon RDS é um serviço gerenciado de banco de dados relacional da AWS. Ele permite criar, operar e escalar bancos de dados na nuvem sem precisar gerenciar a infraestrutura manualmente. O serviço automatiza tarefas como backups, atualizações, replicação e monitoramento, facilitando o gerenciamento de bancos como MySQL, PostgreSQL, MariaDB, Oracle e SQL Server.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="px-2 py-1 border rounded-lg text-xs border-rose-500 text-rose-500">Banco de Dados</span>
+                <span class="px-2 py-1 border rounded-lg text-xs border-rose-500 text-rose-500">Gerenciado</span>
+            </div>
+        </article>
+
+        <article class="bg-white border-2 border-red-500 rounded-2xl shadow-xl p-6 text-red-500 hover:scale-105 transition-transform">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                    </svg>
+                </div>
+                <h2 class="text-xl font-bold">IAM</h2>
+            </div>
+            <p class="text-sm font-medium mb-2">AWS Identity and Access Management</p>
+            <p class="text-slate-700 text-sm leading-relaxed">
+                O IAM é o serviço de gerenciamento de identidades e permissões da AWS. Ele permite controlar quem pode acessar recursos da nuvem e quais ações podem ser executadas. Com ele é possível criar usuários, grupos, funções e políticas de acesso, garantindo segurança e controle sobre os serviços da AWS utilizados em uma organização.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="px-2 py-1 border rounded-lg text-xs border-red-500 text-red-500">Segurança</span>
+                <span class="px-2 py-1 border rounded-lg text-xs border-red-500 text-red-500">Controle de Acesso</span>
+            </div>
+        </article>
+
+        <article class="bg-white border-2 border-teal-500 rounded-2xl shadow-xl p-6 text-teal-500 hover:scale-105 transition-transform">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                    </svg>
+                </div>
+                <h2 class="text-xl font-bold">Route 53</h2>
+            </div>
+            <p class="text-sm font-medium mb-2">Amazon Route 53</p>
+            <p class="text-slate-700 text-sm leading-relaxed">
+                O Route 53 é o serviço de DNS da AWS responsável por direcionar o tráfego da internet para aplicações hospedadas na nuvem. Ele traduz nomes de domínio em endereços IP e pode ser usado para registrar domínios, configurar roteamento inteligente e melhorar a disponibilidade das aplicações.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="px-2 py-1 border rounded-lg text-xs border-teal-500 text-teal-500">DNS</span>
+                <span class="px-2 py-1 border rounded-lg text-xs border-teal-500 text-teal-500">Roteamento</span>
+            </div>
+        </article>
+
+        <article class="bg-white border-2 border-amber-500 rounded-2xl shadow-xl p-6 text-amber-500 hover:scale-105 transition-transform">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
+                    </svg>
+                </div>
+                <h2 class="text-xl font-bold">CloudWatch</h2>
+            </div>
+            <p class="text-sm font-medium mb-2">Amazon CloudWatch</p>
+            <p class="text-slate-700 text-sm leading-relaxed">
+                O CloudWatch é o serviço de monitoramento da AWS que coleta métricas, logs e eventos de aplicações e infraestrutura. Ele permite analisar performance, criar alertas automáticos e dashboards, facilitando a observabilidade, diagnóstico de problemas e otimização de recursos na nuvem.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="px-2 py-1 border rounded-lg text-xs border-amber-500 text-amber-500">Monitoramento</span>
+                <span class="px-2 py-1 border rounded-lg text-xs border-amber-500 text-amber-500">Observabilidade</span>
+            </div>
+        </article>
+
+        </div>
+
+        <footer class="text-center mt-12 text-slate-400 text-sm">
+            <p>Cloud Computing - FATEC 5o Semestre - 2024</p>
+        </footer>
+
+    </main>
+
+    <script>
+        function updateBackground() {
+            const scroll = window.scrollY;
+            const height = document.body.scrollHeight - window.innerHeight;
+            const progress = Math.min(scroll / height, 0.98);
+
+            const colors = [
+                [249,115,22],   // laranja
+                [59,130,246],   // azul
+                [239,68,68]     // vermelho
+            ];
+
+            const index = Math.min(Math.floor(progress * (colors.length - 1)), colors.length - 2);
+            const mix = (progress * (colors.length - 1)) % 1;
+
+            const c1 = colors[index];
+            const c2 = colors[index + 1];
+
+            const r = Math.round(c1[0] + (c2[0] - c1[0]) * mix);
+            const g = Math.round(c1[1] + (c2[1] - c1[1]) * mix);
+            const b = Math.round(c1[2] + (c2[2] - c1[2]) * mix);
+
+            document.body.style.background = `linear-gradient(
+                to bottom,
+                rgb(${Math.floor(r*0.35)},${Math.floor(g*0.35)},${Math.floor(b*0.35)}),
+                rgb(${Math.floor(r*0.15)},${Math.floor(g*0.15)},${Math.floor(b*0.15)})
+            )`;
+        }
+
+        window.addEventListener("scroll", updateBackground);
+        window.addEventListener("load", updateBackground);
+    </script>
+
+</body>
+</html>
