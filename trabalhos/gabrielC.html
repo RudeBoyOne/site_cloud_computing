@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9 Servicos AWS - Gabriel de Castro </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: linear-gradient(to bottom, #f97316, #a855f7, #f43f5e, #f59e0b); border-radius: 999px; }
+        ::-webkit-scrollbar-thumb:hover { background: linear-gradient(to bottom, #fb923c, #c084fc, #fb7185, #fbbf24); }
+        * { scrollbar-width: thin; scrollbar-color: #C0C0C0 #0f172a; }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+    
+    <main class="container mx-auto px-4 py-8 max-w-6xl">
+        
+        <header class="text-center mb-12">
+            <div class="inline-block p-4 bg-gradient-to-br from-orange-600 to-purple-500 rounded-2xl shadow-lg mb-6">
+                <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                </svg>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
+                9 Servicos Essenciais da AWS
+            </h1>
+            <p class="text-xl text-slate-300 font-medium">
+                Gabriel de Castro Silva
+            </p>
+            <p class="text-sm text-slate-400 mt-2">
+                Cloud Computing - FATEC - 5o Semestre
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <article class="bg-gradient-to-br from-sky-500 to-purple-600 rounded-2xl shadow-xl p-6 text-white hover:scale-105 transition-transform">
+                <h2 class="text-xl font-bold">Amazon Aurora</h2>
+                <p class="text-sm font-medium text-purple-100 mb-2">Amazon Aurora</p>
+                <p class="text-white/90 text-sm leading-relaxed">
+                    Banco de dados relacional compatível com MySQL e PostgreSQL. 
+                    Focado em alta performance e escalabilidade e totalmente gerenciado pela AWS.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                    <span class="px-2 py-1 bg-white/20 rounded-lg text-xs">Banco de Dados</span>
+                    <span class="px-2 py-1 bg-white/20 rounded-lg text-xs">Relacional</span>
+                </div>
+            </article>
+
+            <article class="bg-gradient-to-br from-sky-500 to-purple-600 rounded-2xl shadow-xl p-6 text-white hover:scale-105 transition-transform">
+                <h2 class="text-xl font-bold">Amazon DocumentDB</h2>
+                <p class="text-sm font-medium text-purple-100 mb-2">Amazon DocumentDB</p>
+                <p class="text-white/90 text-sm leading-relaxed">
+                    Banco de dados NoSQL orientado a documentos compatível com MongoDB. 
+                    Armazena dados em formato JSON para aplicações modernas.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                    <span class="px-2 py-1 bg-white/20 rounded-lg text-xs">NoSQL</span>
+                    <span class="px-2 py-1 bg-white/20 rounded-lg text-xs">Documentos</span>
+                </div>
+            </article>
+
+            <article class="bg-gradient-to-br from-sky-500 to-purple-600 rounded-2xl shadow-xl p-6 text-white hover:scale-105 transition-transform">
+                <h2 class="text-xl font-bold">Amazon DynamoDB</h2>
+                <p class="text-sm font-medium text-purple-100 mb-2">Amazon DynamoDB</p>
+                <p class="text-white/90 text-sm leading-relaxed">
+                    Banco NoSQL chave-valor extremamente rápido e escalável. 
+                    Serviço serverless muito usado em apps mobile, jogos e sistemas com milhões de usuários.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                    <span class="px-2 py-1 bg-white/20 rounded-lg text-xs">NoSQL</span>
+                    <span class="px-2 py-1 bg-white/20 rounded-lg text-xs">Serverless</span>
+                </div>
+            </article>
+
+            <article class="bg-gradient-to-br from-sky-500 to-purple-600 rounded-2xl shadow-xl p-6 text-white hover:scale-105 transition-transform">
+                <h2 class="text-xl font-bold">AWS CLI</h2>
+                <p class="text-sm font-medium text-purple-100 mb-2">AWS Command Line Interface</p>
+                <p class="text-white/90 text-sm leading-relaxed">
+                    Ferramenta para controlar serviços da AWS pelo terminal permitindo 
+                    criar recursos, fazer upload para S3 e automatizar tarefas.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                    <span class="px-2 py-1 bg-white/20 rounded-lg text-xs">CLI</span>
+                    <span class="px-2 py-1 bg-white/20 rounded-lg text-xs">Automação</span>
+                </div>
+            </article>
+
+            <article class="bg-gradient-to-br from-sky-500 to-purple-600 rounded-2xl shadow-xl p-6 text-white hover:scale-105 transition-transform">
+                <h2 class="text-xl font-bold">AWS CodeBuild</h2>
+                <p class="text-sm font-medium text-sky-100 mb-2">AWS CodeBuild</p>
+                <p class="text-white/90 text-sm leading-relaxed">
+                    Serviço que compila código e executa testes automaticamente 
+                    como parte de pipelines de integração e entrega contínua.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                    <span class="px-2 py-1 bg-white/20 rounded-lg text-xs">CI/CD</span>
+                    <span class="px-2 py-1 bg-white/20 rounded-lg text-xs">Build</span>
+                </div>
+            </article>
+
+            <article class="bg-gradient-to-br from-sky-500 to-purple-600 rounded-2xl shadow-xl p-6 text-white hover:scale-105 transition-transform">
+                <h2 class="text-xl font-bold">AWS CodePipeline</h2>
+                <p class="text-sm font-medium text-sky-100 mb-2">AWS CodePipeline</p>
+                <p class="text-white/90 text-sm leading-relaxed">
+                    Ferramenta de automação de deploy que cria pipelines 
+                    para automatizar todo o fluxo de entrega de software.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                    <span class="px-2 py-1 bg-white/20 rounded-lg text-xs">CI/CD</span>
+                    <span class="px-2 py-1 bg-white/20 rounded-lg text-xs">Deploy</span>
+                </div>
+            </article>
+
+            <article class="bg-gradient-to-br from-sky-500 to-purple-600 rounded-2xl shadow-xl p-6 text-white hover:scale-105 transition-transform">
+                <h2 class="text-xl font-bold">Amazon Transcribe</h2>
+                <p class="text-sm font-medium text-sky-100 mb-2">Amazon Transcribe</p>
+                <p class="text-white/90 text-sm leading-relaxed">
+                    Serviço de machine learning que converte áudio em texto 
+                    usado para transcrição de reuniões e geração de legendas.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                    <span class="px-2 py-1 bg-white/20 rounded-lg text-xs">Machine Learning</span>
+                    <span class="px-2 py-1 bg-white/20 rounded-lg text-xs">Audio</span>
+                </div>
+            </article>
+
+            <article class="bg-gradient-to-br from-sky-500 to-purple-600 rounded-2xl shadow-xl p-6 text-white hover:scale-105 transition-transform">
+                <h2 class="text-xl font-bold">Amazon Translate</h2>
+                <p class="text-sm font-medium text-sky-100 mb-2">Amazon Translate</p>
+                <p class="text-white/90 text-sm leading-relaxed">
+                    Serviço de tradução automática usado para traduzir 
+                    sites, chats e aplicações para múltiplos idiomas.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                    <span class="px-2 py-1 bg-white/20 rounded-lg text-xs">Machine Learning</span>
+                    <span class="px-2 py-1 bg-white/20 rounded-lg text-xs">Tradução</span>
+                </div>
+            </article>
+
+            <article class="bg-gradient-to-br from-sky-500 to-purple-600 rounded-2xl shadow-xl p-6 text-white hover:scale-105 transition-transform">
+                <h2 class="text-xl font-bold">Amazon Polly</h2>
+                <p class="text-sm font-medium text-sky-100 mb-2">Amazon Polly</p>
+                <p class="text-white/90 text-sm leading-relaxed">
+                    Serviço que converte texto em voz natural sendo usado 
+                    em assistentes virtuais, leitura de textos e audiobooks.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                    <span class="px-2 py-1 bg-white/20 rounded-lg text-xs">Machine Learning</span>
+                    <span class="px-2 py-1 bg-white/20 rounded-lg text-xs">Text-to-Speech</span>
+                </div>
+            </article>
+
+        </div>
+
+        <footer class="text-center mt-12 text-slate-400 text-sm">
+            <p>Cloud Computing - FATEC 5o Semestre - 2024</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
