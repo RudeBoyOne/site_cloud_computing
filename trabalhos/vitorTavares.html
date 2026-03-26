@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços da AWS - Cloud Computing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        cloud: {
+                            light: '#f0f9ff',
+                            DEFAULT: '#e0f2fe',
+                            dark: '#1e1b4b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .cloud-float { animation: float 6s ease-in-out infinite; }
+        .cloud-float-delayed { animation: float 8s ease-in-out infinite; animation-delay: -2s; }
+        * { transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; }
+
+        :root {
+            --sb-track: #e0f2fe;
+            --sb-thumb: #0FBDCF;
+            --sb-thumb-hover: #38bdf8;
+        }
+        html.dark {
+            --sb-track: #1e1b4b;
+            --sb-thumb: #0FBDCF;
+            --sb-thumb-hover: #6366f1;
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--sb-track); }
+        ::-webkit-scrollbar-thumb { background: var(--sb-thumb); border-radius: 999px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--sb-thumb-hover); }
+        * { scrollbar-width: thin; scrollbar-color: var(--sb-thumb) var(--sb-track); }
+
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+        }
+    </style>
+</head>
+<body class="min-h-screen transition-colors duration-300">
+    <div id="background" class="fixed inset-0 -z-10 bg-gradient-to-br from-sky-100 via-sky-50 to-white dark:from-indigo-950 dark:via-indigo-900 dark:to-slate-900">
+        <div class="absolute top-20 left-10 w-32 h-16 bg-white/40 dark:bg-white/5 rounded-full blur-2xl cloud-float"></div>
+        <div class="absolute top-40 right-20 w-48 h-24 bg-white/30 dark:bg-white/5 rounded-full blur-3xl cloud-float-delayed"></div>
+        <div class="absolute bottom-32 left-1/4 w-40 h-20 bg-white/35 dark:bg-white/5 rounded-full blur-2xl cloud-float"></div>
+        <div class="absolute top-1/3 right-1/3 w-36 h-18 bg-sky-200/30 dark:bg-indigo-400/10 rounded-full blur-2xl cloud-float-delayed"></div>
+    </div>
+
+    <header class="relative z-10 py-8 px-4 border-b border-sky-200 dark:border-indigo-700">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <button 
+                onclick="window.location.href='../index.html'"
+                class="p-3 rounded-full bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-sky-200 dark:border-indigo-700"
+                aria-label="Voltar"
+            >
+                <svg class="w-6 h-6 text-sky-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+            <div class="text-center">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 dark:text-white mb-2">
+                    Serviços da AWS
+                </h1>
+                <p class="text-lg md:text-xl text-sky-600 dark:text-indigo-300 font-medium">
+                    Explorar tecnologias em nuvem
+                </p>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
+                    Por Vitor Tavares Chaves
+                </p>
+            </div>
+            <button 
+                onclick="toggleTheme()"
+                class="p-3 rounded-full bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-sky-200 dark:border-indigo-700"
+                aria-label="Alternar tema"
+            >
+                <svg class="w-6 h-6 text-amber-500 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-indigo-600 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="relative z-10 max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- AWS IoT Core -->
+            <div class="service-card bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden border border-sky-200 dark:border-indigo-700 hover:shadow-2xl">
+                <div class="h-32 bg-gradient-to-br from-orange-500 to-amber-600 flex items-center justify-center p-4">
+                    <div class="text-white text-center">
+                        <div class="text-4xl mb-2">📡</div>
+                        <h3 class="font-bold text-lg">AWS IoT Core</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
+                        Serviço da Amazon voltado para soluções de IoT (Internet of Things). Permite criar, monitorar e comunicar-se com 'coisas' através de protocolos como MQTT, integrando camadas de IoT a sistemas de nuvem com sensores e atuadores.
+                    </p>
+                </div>
+            </div>
+
+            <!-- AWS Lambda -->
+            <div class="service-card bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden border border-sky-200 dark:border-indigo-700 hover:shadow-2xl">
+                <div class="h-32 bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center p-4">
+                    <div class="text-white text-center">
+                        <div class="text-4xl mb-2">⚡</div>
+                        <h3 class="font-bold text-lg">AWS Lambda</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
+                        Serviço para rodar código sem administrar servidores. Utilizado para escalar aplicações como APIs, com pagamento apenas pela computação utilizada. Gerencia infraestrutura e segurança entre camadas do sistema.
+                    </p>
+                </div>
+            </div>
+
+            <!-- DynamoDB -->
+            <div class="service-card bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden border border-sky-200 dark:border-indigo-700 hover:shadow-2xl">
+                <div class="h-32 bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center p-4">
+                    <div class="text-white text-center">
+                        <div class="text-4xl mb-2">💾</div>
+                        <h3 class="font-bold text-lg">DynamoDB</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
+                        Banco de Dados como Serviço (DBaaS) - NoSQL orientado a chave-valor e documento. Utilizado para sistemas web, mobile, IoT e outros. AWS fornece toda infraestrutura com opções de pagamento sob demanda ou provisionados.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Auto Scaling -->
+            <div class="service-card bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden border border-sky-200 dark:border-indigo-700 hover:shadow-2xl">
+                <div class="h-32 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center p-4">
+                    <div class="text-white text-center">
+                        <div class="text-4xl mb-2">📈</div>
+                        <h3 class="font-bold text-lg">Auto Scaling</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
+                        Serviço de escalamento automático de capacidades em nuvem (como EC2) baseado em média histórica de uso. Monitora continuamente e adiciona/remove CPU conforme necessário, ou em momentos pré-determinados.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Elastic Load Balancing -->
+            <div class="service-card bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden border border-sky-200 dark:border-indigo-700 hover:shadow-2xl">
+                <div class="h-32 bg-gradient-to-br from-sky-500 to-cyan-600 flex items-center justify-center p-4">
+                    <div class="text-white text-center">
+                        <div class="text-4xl mb-2">⚖️</div>
+                        <h3 class="font-bold text-lg">Load Balancing</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
+                        Distribui o tráfego de entrada de aplicações entre instâncias EC2 em uma ou mais AZs (Zonas de Disponibilidade). No caso de falha, o tráfego é distribuído entre as instâncias restantes.
+                    </p>
+                </div>
+            </div>
+
+            <!-- AWS Backup -->
+            <div class="service-card bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden border border-sky-200 dark:border-indigo-700 hover:shadow-2xl">
+                <div class="h-32 bg-gradient-to-br from-rose-500 to-pink-600 flex items-center justify-center p-4">
+                    <div class="text-white text-center">
+                        <div class="text-4xl mb-2">💿</div>
+                        <h3 class="font-bold text-lg">AWS Backup</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
+                        Automatização de tarefas de backup service-by-service de acordo com políticas e cronogramas definidos. Fornece proteção centralizada de dados em toda a infraestrutura AWS.
+                    </p>
+                </div>
+            </div>
+
+            <!-- AWS site-to-site VPN -->
+            <div class="service-card bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden border border-sky-200 dark:border-indigo-700 hover:shadow-2xl">
+                <div class="h-32 bg-gradient-to-br from-red-500 to-orange-600 flex items-center justify-center p-4">
+                    <div class="text-white text-center">
+                        <div class="text-4xl mb-2">🔐</div>
+                        <h3 class="font-bold text-lg">Site-to-site VPN</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
+                        Cria conexão segura entre centro de dados ou rede local com Amazon VPC ou recursos AWS pela internet pública. Possibilita comunicação criptografada e confiável entre ambientes.
+                    </p>
+                </div>
+            </div>
+
+            <!-- AWS IAM -->
+            <div class="service-card bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden border border-sky-200 dark:border-indigo-700 hover:shadow-2xl">
+                <div class="h-32 bg-gradient-to-br from-cyan-500 to-teal-600 flex items-center justify-center p-4">
+                    <div class="text-white text-center">
+                        <div class="text-4xl mb-2">🔑</div>
+                        <h3 class="font-bold text-lg">AWS IAM</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
+                        Identity and Access Management - Gerencia acessos aos recursos AWS. Permite criar usuários, grupos, funções e aplicar políticas JSON. Recomenda-se seguir "menor privilégio" e "confiança zero".
+                    </p>
+                </div>
+            </div>
+
+            <!-- Amazon EBS -->
+            <div class="service-card bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden border border-sky-200 dark:border-indigo-700 hover:shadow-2xl">
+                <div class="h-32 bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center p-4">
+                    <div class="text-white text-center">
+                        <div class="text-4xl mb-2">💾</div>
+                        <h3 class="font-bold text-lg">Amazon EBS</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
+                        Elastic Block Store - Permite criar blocos de armazenamento e anexá-los a instâncias EC2. Utilizado para backup, recuperação de desastres ou armazenamento tradicional em cargas de trabalho na nuvem.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="relative z-10 py-8 px-4 border-t border-sky-200 dark:border-indigo-700 mt-12">
+        <div class="max-w-7xl mx-auto text-center text-slate-600 dark:text-slate-400">
+            <p>Cloud Computing - FATEC • 5º Semestre</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            html.classList.toggle('dark');
+            localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+        }
+
+        // Aplicar tema ao carregar a página
+        window.addEventListener('DOMContentLoaded', () => {
+            const theme = localStorage.getItem('theme') || 'light';
+            if (theme === 'dark') {
+                document.documentElement.classList.add('dark');
+            }
+        });
+    </script>
+</body>
+</html>
