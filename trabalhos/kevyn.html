@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9 Serviços AWS - Kevyn Cavalcanti</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-slate-300 selection:bg-red-500/30 font-sans">
+
+    <main class="container mx-auto px-4 py-12 max-w-5xl">
+        
+        <header class="text-center mb-20">
+            <div class="inline-block p-4 bg-gradient-to-br from-red-600 to-rose-600 rounded-2xl shadow-2xl shadow-red-900/20 mb-6 border border-red-400/20">
+                <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                </svg>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">
+                9 Serviços Essenciais da <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-400">AWS</span>
+            </h1>
+            <p class="text-xl text-red-500 font-semibold tracking-wide">
+                Kevyn Cavalcanti
+            </p>
+            <p class="text-sm text-slate-400 mt-2">
+                Cloud Computing - FATEC - 5o Semestre
+            </p>
+        </header>
+
+        <div class="relative">
+            <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-gradient-to-b from-red-600 via-rose-500 to-red-600 hidden md:block opacity-20"></div>
+
+            <article class="relative flex flex-col md:flex-row items-center mb-16 group">
+                <div class="flex-1 md:pr-12 md:text-right order-2 md:order-1">
+                    <div class="bg-slate-900/40 backdrop-blur-xl rounded-2xl p-6 border border-red-500/20 group-hover:border-red-500/50 transition-all duration-500 shadow-xl">
+                        <h2 class="text-xl font-bold text-white mb-1">Amazon GameLift</h2>
+                        <p class="text-xs font-bold text-red-500 tracking-wider mb-3">Hosting de jogos</p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Serviço gerenciado para implantar e operar servidores de jogos multiplayer. Ele otimiza a latência ao aproximar os servidores dos jogadores e ajusta automaticamente a capacidade para reduzir custos em momentos de baixa demanda.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2 md:justify-end">
+                            <span class="px-2 py-1 bg-red-500/10 text-red-400 border border-red-500/20 rounded-lg text-[10px] font-bold tracking-wider">Cloud</span>
+                            <span class="px-2 py-1 bg-red-500/10 text-red-400 border border-red-500/20 rounded-lg text-[10px] font-bold tracking-wider">Jogos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="z-10 w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(220,38,38,0.3)] order-1 md:order-2 mb-4 md:mb-0 border-2 border-slate-800">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"></path></svg>
+                </div>
+                <div class="flex-1 md:pl-12 order-3 hidden md:block"></div>
+            </article>
+
+            <article class="relative flex flex-col md:flex-row items-center mb-16 group">
+                <div class="flex-1 md:pr-12 order-2 md:order-1 hidden md:block"></div>
+                <div class="z-10 w-12 h-12 bg-gradient-to-br from-rose-500 to-rose-600 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(244,63,94,0.3)] order-1 md:order-2 mb-4 md:mb-0 border-2 border-slate-800">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <div class="flex-1 md:pl-12 md:text-left order-2 md:order-3">
+                    <div class="bg-slate-900/40 backdrop-blur-xl rounded-2xl p-6 border border-rose-500/20 group-hover:border-rose-500/50 transition-all duration-500 shadow-xl">
+                        <h2 class="text-xl font-bold text-white mb-1">AWS Lambda</h2>
+                        <p class="text-xs font-bold text-rose-500 tracking-wider mb-3">Sem Servidor</p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Permite a execução de código em resposta a eventos. Ideal para arquiteturas de microsserviços, o serviço escala automaticamente e cobra apenas pelo tempo de processamento.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-rose-500/10 text-rose-400 border border-rose-500/20 rounded-lg text-[10px] font-bold tracking-wider">Hook</span>
+                            <span class="px-2 py-1 bg-rose-500/10 text-rose-400 border border-rose-500/20 rounded-lg text-[10px] font-bold tracking-wider">Evento</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="relative flex flex-col md:flex-row items-center mb-16 group">
+                <div class="flex-1 md:pr-12 md:text-right order-2 md:order-1">
+                    <div class="bg-slate-900/40 backdrop-blur-xl rounded-2xl p-6 border border-red-700/20 group-hover:border-red-700/50 transition-all duration-500 shadow-xl">
+                        <h2 class="text-xl font-bold text-white mb-1">Amazon S3</h2>
+                        <p class="text-xs font-bold text-red-600 tracking-wider mb-3">Serviço de Armazenamento</p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Uma plataforma de armazenamento de objetos. É muito utilizado para backup de dados, hospedagem de sites estáticos e como repositório principal para Data Lakes, permitindo o acesso seguro de qualquer lugar na web.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2 md:justify-end">
+                            <span class="px-2 py-1 bg-red-600/10 text-red-500 border border-red-600/20 rounded-lg text-[10px] font-bold tracking-wider">Armazenamento</span>
+                            <span class="px-2 py-1 bg-red-600/10 text-red-500 border border-red-600/20 rounded-lg text-[10px] font-bold tracking-wider">Cloud</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="z-10 w-12 h-12 bg-gradient-to-br from-red-700 to-red-800 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(185,28,28,0.3)] order-1 md:order-2 mb-4 md:mb-0 border-2 border-slate-800">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path></svg>
+                </div>
+                <div class="flex-1 md:pl-12 order-3 hidden md:block"></div>
+            </article>
+
+            <article class="relative flex flex-col md:flex-row items-center mb-16 group">
+                <div class="flex-1 md:pr-12 order-2 md:order-1 hidden md:block"></div>
+                <div class="z-10 w-12 h-12 bg-gradient-to-br from-pink-600 to-rose-700 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(219,39,119,0.3)] order-1 md:order-2 mb-4 md:mb-0 border-2 border-slate-800">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
+                </div>
+                <div class="flex-1 md:pl-12 md:text-left order-2 md:order-3">
+                    <div class="bg-slate-900/40 backdrop-blur-xl rounded-2xl p-6 border border-pink-500/20 group-hover:border-pink-500/50 transition-all duration-500 shadow-xl">
+                        <h2 class="text-xl font-bold text-white mb-1">Amazon DynamoDB</h2>
+                        <p class="text-xs font-bold text-pink-500 tracking-wider mb-3">Serviço de Banco NoSQL</p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Banco de dados NoSQL de chave-valor e documentos que oferece desempenho consistente. É um serviço totalmente gerenciado, multi-região e com segurança integrada, ideal para aplicações móveis, web e jogos.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-pink-500/10 text-pink-400 border border-pink-500/20 rounded-lg text-[10px] font-bold tracking-wider">Armazenamento</span>
+                            <span class="px-2 py-1 bg-pink-500/10 text-pink-400 border border-pink-500/20 rounded-lg text-[10px] font-bold tracking-wider">NoSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="relative flex flex-col md:flex-row items-center mb-16 group">
+                <div class="flex-1 md:pr-12 md:text-right order-2 md:order-1">
+                    <div class="bg-slate-900/40 backdrop-blur-xl rounded-2xl p-6 border border-red-600/20 group-hover:border-red-600/50 transition-all duration-500 shadow-xl">
+                        <h2 class="text-xl font-bold text-white mb-1">Amazon Route 53</h2>
+                        <p class="text-xs font-bold text-red-500 tracking-wider mb-3">Serviço DNS escalável</p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Serviço de DNS disponível e escalável que conecta as solicitações dos usuários a infraestruturas executadas na AWS ou fora dela. Ele faz verificações de integridade para rotear o tráfego apenas para endpoints seguros e suporta registros de nomes de domínio.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2 md:justify-end">
+                            <span class="px-2 py-1 bg-red-500/10 text-red-400 border border-red-500/20 rounded-lg text-[10px] font-bold tracking-wider">Rede</span>
+                            <span class="px-2 py-1 bg-red-500/10 text-red-400 border border-red-500/20 rounded-lg text-[10px] font-bold tracking-wider">DNS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="z-10 w-12 h-12 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(220,38,38,0.3)] order-1 md:order-2 mb-4 md:mb-0 border-2 border-slate-800">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                </div>
+                <div class="flex-1 md:pl-12 order-3 hidden md:block"></div>
+            </article>
+
+            <article class="relative flex flex-col md:flex-row items-center mb-16 group">
+                <div class="flex-1 md:pr-12 order-2 md:order-1 hidden md:block"></div>
+                <div class="z-10 w-12 h-12 bg-gradient-to-br from-rose-700 to-rose-900 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(190,18,60,0.3)] order-1 md:order-2 mb-4 md:mb-0 border-2 border-slate-800">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                </div>
+                <div class="flex-1 md:pl-12 md:text-left order-2 md:order-3">
+                    <div class="bg-slate-900/40 backdrop-blur-xl rounded-2xl p-6 border border-rose-800/20 group-hover:border-rose-800/50 transition-all duration-500 shadow-xl">
+                        <h2 class="text-xl font-bold text-white mb-1">Amazon VPC</h2>
+                        <p class="text-xs font-bold text-rose-700 tracking-wider mb-3">Nuvem virtual privada</p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Proporciona uma rede virtual logicamente isolada para testar recursos AWS em um ambiente seguro e controlado. O usuário define o intervalo de endereços IP, sub-redes, tabelas de roteamento e gateways de rede, garantindo isolamento total de outros clientes.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-rose-700/10 text-rose-500 border border-rose-700/20 rounded-lg text-[10px] font-bold tracking-wider">Rede</span>
+                            <span class="px-2 py-1 bg-rose-700/10 text-rose-500 border border-rose-700/20 rounded-lg text-[10px] font-bold tracking-wider">Segurança</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="relative flex flex-col md:flex-row items-center mb-16 group">
+                <div class="flex-1 md:pr-12 md:text-right order-2 md:order-1">
+                    <div class="bg-slate-900/40 backdrop-blur-xl rounded-2xl p-6 border border-red-500/20 group-hover:border-red-500/50 transition-all duration-500 shadow-xl">
+                        <h2 class="text-xl font-bold text-white mb-1">Amazon CloudFront</h2>
+                        <p class="text-xs font-bold text-red-500 tracking-wider mb-3">Rede de envio de conteúdo</p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Serviço de CDN que acelera a distribuição de conteúdos estáticos e dinâmicos para usuários finais em todo o mundo. Ele utiliza uma rede global de Edge Locations para entregar dados com baixa latência.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2 md:justify-end">
+                            <span class="px-2 py-1 bg-red-500/10 text-red-400 border border-red-500/20 rounded-lg text-[10px] font-bold tracking-wider">Rede</span>
+                            <span class="px-2 py-1 bg-red-500/10 text-red-400 border border-red-500/20 rounded-lg text-[10px] font-bold tracking-wider">Distribuição</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="z-10 w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(239,68,68,0.3)] order-1 md:order-2 mb-4 md:mb-0 border-2 border-slate-800">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>
+                </div>
+                <div class="flex-1 md:pl-12 order-3 hidden md:block"></div>
+            </article>
+
+            <article class="relative flex flex-col md:flex-row items-center mb-16 group">
+                <div class="flex-1 md:pr-12 order-2 md:order-1 hidden md:block"></div>
+                <div class="z-10 w-12 h-12 bg-gradient-to-br from-pink-600 to-pink-700 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(219,39,119,0.3)] order-1 md:order-2 mb-4 md:mb-0 border-2 border-slate-800">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A10.003 10.003 0 003 20c3.905 0 7.351-2.479 8.792-6M17 11a5 5 0 11-10 0 5 5 0 0110 0z"></path></svg>
+                </div>
+                <div class="flex-1 md:pl-12 md:text-left order-2 md:order-3">
+                    <div class="bg-slate-900/40 backdrop-blur-xl rounded-2xl p-6 border border-pink-600/20 group-hover:border-pink-600/50 transition-all duration-500 shadow-xl">
+                        <h2 class="text-xl font-bold text-white mb-1">AWS IAM</h2>
+                        <p class="text-xs font-bold text-pink-600 tracking-wider mb-3">Controle de acesso</p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Controla o acesso de usuários e grupos aos recursos da nuvem. Através do IAM, é possível criar políticas de segurança específicas e gerenciar credenciais, garantindo conformidade e segurança em toda a conta.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-pink-600/10 text-pink-400 border border-pink-600/20 rounded-lg text-[10px] font-bold tracking-wider">Segurança</span>
+                            <span class="px-2 py-1 bg-pink-600/10 text-pink-400 border border-pink-600/20 rounded-lg text-[10px] font-bold tracking-wider">Cloud</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="relative flex flex-col md:flex-row items-center mb-16 group">
+                <div class="flex-1 md:pr-12 md:text-right order-2 md:order-1">
+                    <div class="bg-slate-900/40 backdrop-blur-xl rounded-2xl p-6 border border-red-900/30 group-hover:border-red-600/50 transition-all duration-500 shadow-xl">
+                        <h2 class="text-xl font-bold text-white mb-1">Amazon RDS</h2>
+                        <p class="text-xs font-bold text-red-800 tracking-wider mb-3">Serviço de banco SQL</p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Serviço gerenciado que facilita a configuração, operação e escalabilidade de bancos de dados relacionais. Ele automatiza tarefas demoradas como backups, atualizações de software e provisionamento de hardware, garantindo alta disponibilidade.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2 md:justify-end">
+                            <span class="px-2 py-1 bg-red-800/10 text-red-500 border border-red-800/20 rounded-lg text-[10px] font-bold tracking-wider">Armazenamento</span>
+                            <span class="px-2 py-1 bg-red-800/10 text-red-500 border border-red-800/20 rounded-lg text-[10px] font-bold tracking-wider">SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="z-10 w-12 h-12 bg-gradient-to-br from-red-800 to-red-950 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(127,17,17,0.3)] order-1 md:order-2 mb-4 md:mb-0 border-2 border-slate-800">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                </div>
+                <div class="flex-1 md:pl-12 order-3 hidden md:block"></div>
+            </article>
+
+        </div>
+
+        <footer class="text-center mt-12 text-slate-400 text-sm">
+            <p>Cloud Computing - FATEC - 5º Semestre</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
