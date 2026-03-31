@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9 Servicos AWS - Allan Chagas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f9fafb; }
+        ::-webkit-scrollbar-thumb { background: #2563eb; border-radius: 999px; }
+        ::-webkit-scrollbar-thumb:hover { background: #1d4ed8; }
+        * { scrollbar-width: thin; scrollbar-color: #2563eb #f9fafb; }
+    </style>
+</head>
+   <body class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+    
+    <main class="container mx-auto px-4 py-8 max-w-6xl">
+        
+        <header class="text-center mb-12">
+            <div class="inline-block p-4 bg-gradient-to-br from-orange-500 to-amber-600 rounded-2xl shadow-lg mb-6">
+                <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                </svg>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
+                9 Serviços da AWS
+            </h1>
+            <p class="text-xl text-slate-300 font-medium">
+                Allan Chagas da silva
+            </p>
+            <p class="text-sm text-slate-400 mt-2">
+                Cloud Computing - FATEC - 5º Semestre
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            
+            
+            <article class="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl shadow-xl p-6 text-white hover:scale-105 transition-transform">
+                <h2 class="text-xl font-bold mb-2">Amazon EC2</h2>
+                <p class="text-sm text-orange-100 mb-2">Servidores virtuais sob demanda</p>
+                <p class="text-white/90 text-sm leading-relaxed">
+                    O EC2 permite criar máquinas virtuais na nuvem para executar aplicações,
+                    sites e sistemas. É possível escolher diferentes configurações de hardware
+                    e pagar apenas pelo tempo em que o servidor estiver ativo.
+                </p>
+            </article>
+            <article class="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl shadow-xl p-6 text-white hover:scale-105 transition-transform">
+                <h2 class="text-xl font-bold mb-2">Amazon RDS</h2>
+                <p class="text-sm text-blue-100 mb-2">Banco de dados relacional gerenciado</p>
+                <p class="text-white/90 text-sm leading-relaxed">
+                    O RDS facilita o uso de bancos de dados SQL na nuvem, cuidando de tarefas
+                    como backup, atualizações e recuperação em caso de falhas, permitindo que
+                    o desenvolvedor foque apenas na aplicação.
+                </p>
+            </article>
+            
+            <article class="bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl shadow-xl p-6 text-white hover:scale-105 transition-transform">
+                <h2 class="text-xl font-bold mb-2">Amazon S3</h2>
+                <p class="text-sm text-green-100 mb-2">Armazenamento de arquivos em nuvem</p>
+                <p class="text-white/90 text-sm leading-relaxed">
+                    O S3 é utilizado para guardar arquivos como imagens, vídeos, documentos
+                    e backups. Ele oferece alta durabilidade e permite acessar os dados de
+                    qualquer lugar através da internet.
+                </p>
+            </article>
+            <article class="bg-gradient-to-br from-sky-500 to-cyan-600 rounded-2xl shadow-xl p-6 text-white hover:scale-105 transition-transform">
+                <h2 class="text-xl font-bold mb-2">Amazon DynamoDB</h2>
+                <p class="text-sm text-sky-100 mb-2">Banco de dados NoSQL rápido</p>
+                <p class="text-white/90 text-sm leading-relaxed">
+                    O DynamoDB é um banco de dados não relacional que oferece respostas muito
+                    rápidas e escalabilidade automática, sendo ideal para aplicações que
+                    precisam lidar com grande volume de acessos simultâneos.
+                </p>
+            </article>
+            
+            <article class="bg-gradient-to-br from-rose-500 to-pink-600 rounded-2xl shadow-xl p-6 text-white hover:scale-105 transition-transform">
+                <h2 class="text-xl font-bold mb-2">Amazon CloudFront</h2>
+                <p class="text-sm text-rose-100 mb-2">Distribuição de conteúdo global</p>
+                <p class="text-white/90 text-sm leading-relaxed">
+                    O CloudFront é uma rede de distribuição de conteúdo que entrega arquivos
+                    e páginas web a partir de servidores próximos ao usuário, reduzindo o
+                    tempo de carregamento e melhorando a performance dos sites.
+                </p>
+            </article>
+
+            <article class="bg-gradient-to-br from-red-500 to-rose-600 rounded-2xl shadow-xl p-6 text-white hover:scale-105 transition-transform">
+                <h2 class="text-xl font-bold mb-2">AWS IAM</h2>
+                <p class="text-sm text-red-100 mb-2">Controle de usuários e permissões</p>
+                <p class="text-white/90 text-sm leading-relaxed">
+                    O IAM é responsável por gerenciar quem pode acessar os recursos da AWS.
+                    Com ele, é possível criar usuários, grupos e permissões específicas para
+                    manter o ambiente seguro e organizado.
+                </p>
+            </article>
+            
+            <article class="bg-gradient-to-br from-purple-500 to-violet-600 rounded-2xl shadow-xl p-6 text-white hover:scale-105 transition-transform">
+                <h2 class="text-xl font-bold mb-2">AWS Lambda</h2>
+                <p class="text-sm text-purple-100 mb-2">Execução de código sem servidor</p>
+                <p class="text-white/90 text-sm leading-relaxed">
+                    Com o Lambda, é possível rodar funções na nuvem sem precisar configurar
+                    ou manter servidores. O código é executado automaticamente quando ocorre
+                    um evento, como o envio de um arquivo ou uma requisição HTTP.
+                </p>
+            </article>
+
+            <article class="bg-gradient-to-br from-teal-500 to-emerald-600 rounded-2xl shadow-xl p-6 text-white hover:scale-105 transition-transform">
+                <h2 class="text-xl font-bold mb-2">Amazon VPC</h2>
+                <p class="text-sm text-teal-100 mb-2">Rede privada virtual</p>
+                <p class="text-white/90 text-sm leading-relaxed">
+                    A VPC permite criar uma rede isolada dentro da AWS, onde você define
+                    sub-redes, regras de acesso e comunicação entre serviços, garantindo
+                    maior controle e segurança na infraestrutura.
+                </p>
+            </article>
+
+            <article class="bg-gradient-to-br from-amber-500 to-yellow-600 rounded-2xl shadow-xl p-6 text-white hover:scale-105 transition-transform">
+                <h2 class="text-xl font-bold mb-2">Amazon SNS</h2>
+                <p class="text-sm text-amber-100 mb-2">Serviço de notificações</p>
+                <p class="text-white/90 text-sm leading-relaxed">
+                    O SNS é utilizado para enviar mensagens e alertas para vários usuários
+                    ou sistemas ao mesmo tempo, por meio de e-mail, SMS ou outros serviços,
+                    sendo muito útil em arquiteturas baseadas em eventos.
+                </p>
+            </article>
+
+        </div>
+
+        <footer class="text-center mt-12 text-slate-400 text-sm">
+            <p>Cloud Computing - FATEC - 5º Semestre</p>
+        </footer>
+
+    </main>
+</body> 
+
+</html>
